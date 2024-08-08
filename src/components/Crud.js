@@ -16,7 +16,7 @@ const Crud = () => {
     try {
       const response = await fetch('https://skin-scent-server.onrender.com/list');
       const data = await response.json();
-      console.log('Fetched items:', data); // Debugging statement
+      console.log('Fetched items:', data);
       setItems(data);
     } catch (error) {
       console.error('Error fetching items:', error);
@@ -27,7 +27,7 @@ const Crud = () => {
     try {
       await fetch('https://skin-scent-server.onrender.com/upload', {
         method: 'POST',
-        body: item, // Ensure this is in the correct format
+        body: item,
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       fetchItems(); // Refresh the list after adding
