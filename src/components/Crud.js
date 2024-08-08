@@ -14,7 +14,7 @@ const Crud = () => {
 
   const fetchItems = async () => {
     try {
-      const response = await fetch('http://localhost:5001/list');
+      const response = await fetch('https://skin-scent-server.onrender.com/list');
       const data = await response.json();
       console.log('Fetched items:', data); // Debugging statement
       setItems(data);
@@ -25,7 +25,7 @@ const Crud = () => {
 
   const addItem = async (item) => {
     try {
-      await fetch('http://localhost:5001/upload', {
+      await fetch('https://skin-scent-server.onrender.com/upload', {
         method: 'POST',
         body: item, // Ensure this is in the correct format
         headers: { 'Content-Type': 'multipart/form-data' }
