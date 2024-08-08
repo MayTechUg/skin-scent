@@ -34,7 +34,7 @@ const Products = ({ category }) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('http://localhost:5001/list');
+        const response = await axios.get('https://skin-scent-server.onrender.com/list');
         const allItems = response.data;
         const filteredItems = allItems.filter(item => item.category === category);
         setItems(filteredItems);

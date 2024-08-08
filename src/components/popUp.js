@@ -9,7 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Popup = ({ isOpen, onClose }) => {
 
-  const phoneNumber = "0788975743"; 
+  const phoneNumber = "+256706547916"; 
+  const phoneNumberTwo = "+971582733937"; 
   const message = "Hello! I'm interested in your products."; 
   
   return (
@@ -18,16 +19,16 @@ const Popup = ({ isOpen, onClose }) => {
         <button onClick={onClose} className="close-btn">Close</button>
         <div className='call'>
             <p>Order Via Direct Call</p>
-            <a href='tel:+256742588767'><FontAwesomeIcon icon={faPhoneAlt}/><span> 0742588767</span></a>
-            <a href='tel:+256788975743'><FontAwesomeIcon icon={faPhoneAlt}/><span> 0788975743</span></a>
+            <a href='tel:+256706547916'><FontAwesomeIcon icon={faPhoneAlt}/><span> +256706547916</span></a>
+            <a href='tel:+971582733937'><FontAwesomeIcon icon={faPhoneAlt}/><span> +971582733937</span></a>
         </div>
         <div className='call'>
             <p>Order Via WhatsApp</p>
             <a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}>
-            <FontAwesomeIcon icon={faWhatsapp} className='whatsapp'/><span> +911265890076</span>
+            <FontAwesomeIcon icon={faWhatsapp} className='whatsapp'/><span> +256706547916</span>
             </a>
-            <a href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}>
-            <FontAwesomeIcon icon={faWhatsapp} className='whatsapp'/><span> +256788975743</span>
+            <a href={`https://wa.me/${phoneNumberTwo}?text=${encodeURIComponent(message)}`}>
+            <FontAwesomeIcon icon={faWhatsapp} className='whatsapp'/><span>+971582733937</span>
             </a>
         </div>
         <div className='socialMedia'>
@@ -37,10 +38,10 @@ const Popup = ({ isOpen, onClose }) => {
             <a href="https://www.instagram.com/skinandscent256" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} className='insta'/>
             </a>
-            <a href="https://www.tiktok.com/@ondeen51" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.tiktok.com/@skinandscent256" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faTiktok} className='tikTok'/>
             </a>
-            <a href="https://www.facebook.com/@ondeen51" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/@skinandscent256" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFacebook} className='faceBook'/>
             </a>
             </p>

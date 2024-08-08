@@ -21,7 +21,7 @@ const Product = ({ items }) => {
         navigate(-1);
     }
 
-    const phoneNumber = "0788975743";
+    const phoneNumber = "+256706547916";
     const message = "Hello! I'm interested in your products.";
 
     return (
