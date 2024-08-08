@@ -44,7 +44,7 @@ const AddItem = ({ addItem, editingItem, updateItem }) => {
     formData.append('priceTwo', priceTwo);
 
     try {
-      const response = await fetch('http://localhost:5001/upload', {
+      const response = await fetch('https://skin-scent-server.onrender.com/upload', {
         method: 'POST',
         body: formData,
       });
