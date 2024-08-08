@@ -1,0 +1,71 @@
+
+:root{
+  --app-height:100vh;
+}
+
+@supports(height: 100dvh){
+  :root{
+    --app-height:100vh;
+  }
+}
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: var(--app-height);
+  overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    font-family: 'Montserrat', serif;
+  }
+
+h5, h6 {
+    font-family: 'Playfair Display', serif;
+    cursor: pointer; 
+}
+
+h2,p {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+#root {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App {
+    flex-grow: 1;
+    width: 100%;
+    height: var(--app-height);
+    max-width: 428px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #00000059;
+    box-shadow: -1px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/* MEDIA QUERIES */
+
+/* Example media query for small phones 
+@media (max-width: 320px) {
+    }
+  
+  @media (max-width: 375px) {
+    }
+  
+  @media (max-width: 414px) {
+    }
+   
+  @media (max-width: 428px) {
+  }
+  */
+  

@@ -1,0 +1,77 @@
+.missing {
+    flex-grow: 1;
+    width: 100%;
+    height: 100dvh;
+    cursor: pointer;
+    overflow-y: auto;
+    display: flex;
+    color: #ff4800;
+    flex-flow: column nowrap;
+    gap: 1.5em;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('../../assets/tipsImages/PeptideGroupShot_303b9904-6e32-4ac2-a55f-e7c049b630a5_540x.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    position: relative;
+}
+
+.texts {
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;color: #fff;
+    z-index: 2;
+    text-shadow: 1px 1px 2px #0000008f;
+}
+
+.whiteFade {
+    position: absolute;background-color: rgba(0, 0, 0, 0.459);
+    width: 100%;top: 0px;bottom: 0px;
+}
+
+.welcome {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hi {
+    font-size: 3.2rem;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.to {
+    font-size: 2.5rem;
+    font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.skin {
+    font-size:3.2rem;color: #ffffff;
+    font-weight: bolder; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navigation-buttons button{
+    all: initial;background-color: #03030300;
+    text-align: center;padding: .2rem;
+    color: #ffffff;border: 1px solid #ffffff;
+    width: 90%;border-bottom: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.missing h1 {
+    z-index: 2;
+    font-size: 2rem;
+}
+
+.navigation-buttons button:hover{
+    transform: scale(1.02);
+}
+
+.navigation-buttons {
+    display: flex;
+    width: 100%;
+    z-index: 2;
+    gap: .9rem;
+    flex-flow: column nowrap;align-items: center;
+    justify-content: center;
+    padding: .5rem;
+}

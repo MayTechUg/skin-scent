@@ -1,0 +1,646 @@
+.productsList {
+    flex-grow: 1;
+    width: 100%;
+    height: 100dvh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    align-items: center;
+}
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+@keyframes anim{
+    0%  { display: none; transform:  translateY(500px) scale(.2); }
+    100%   { transform:  translateY(0px)}
+}
+
+/* SEARCHBAR ONE */
+
+.search-bar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+  
+  .search-bar input {
+    all: initial;
+    background-color: #fff;
+    position: relative;
+    border: 1px solid #00000049;
+    box-shadow: 0px 0px 10px #00000049;
+    font-family: "Montero", sans-serif;
+    font-size: .8rem;
+    width: 100%;
+    padding: 0.2rem 2rem 0.2rem 0.2rem;
+    border-radius: 5px;
+    margin-top: 0.3rem;
+    margin-inline: 0.15rem;
+  }
+
+  .allProducts {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    justify-content:flex-start;
+  }
+  
+  .productsContainer {
+    border-right: 1px solid #ddd;
+    padding: 5px;
+    animation: anim .4s ease-in-out;
+    text-align: center;
+  }
+  
+  .productImage img {
+    max-width: 100px;height: auto;
+  }
+  
+  .productDetails {
+    margin-top: 10px;
+  }
+  
+  .productName {
+    font-weight: bold;
+  }
+  
+  .productPrice {
+    color: #e74c3c;
+    font-size: 18px;
+  }
+
+.allProducts {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+    width: 100%;
+    /* border-radius: 5px; */
+    
+}
+
+.productsContainer {
+    flex-grow: 1;
+    max-width: 150px;
+    max-height: 250px;
+    /* border-radius: 3px; */
+    border-bottom: 1px solid #00000034;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    /* margin: 2px; */
+}
+
+.productImage {
+    max-height: 200px;
+    min-height: 150px;
+    /* border: 1px solid #000; */
+}
+.productImage img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.productsContainer button {
+    all: initial;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 900;
+    font-family: 'Playfair Display', sans-serif;
+    border-radius: 0 0 2px 2px;
+    border: 1px solid #00000000;
+    background-color: #000000ab;
+}
+.productsContainer button:hover {
+    transform: scale(.95);
+}
+.productDetails {
+    min-height: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.productName {
+    font-size: 0.72rem;
+}
+.productPrice {
+    font-size: .9rem;
+    font-weight: bolder;
+    font-family: "Lora",serif;
+}
+
+
+/* PRODUCT */
+
+.singleProduct {
+    flex-grow: 1;
+    width: 100%;
+    height: 100dvh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    animation: anim .6s ease-in-out;
+}
+
+.h2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    color: #0505058a;
+    padding-left: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px #0000001a;
+}
+.h2 svg{
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+.h2 svg:hover{
+    transform: scale(1.1);
+    border: 1px solid #ff4400;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff4400;
+}
+h2 {
+    padding: 0.5rem;
+    width: 100%;
+    color: #050505b2;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.mainProduct {
+    margin-inline: 0.5rem;
+    height: 300px;
+    padding-top: 1rem;
+}
+.mainProduct img {
+    width: 100%;
+    height: 100%;
+}
+
+.orderOptions {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 5px;
+} 
+
+.call-button {
+    border: 1px solid #ff4400;
+    display: flex;
+    white-space: nowrap;
+    flex: 1;
+    justify-content: center;
+    padding: 0.2rem;
+    gap: 0.5rem;
+    color: #fff;
+    background-color: #ff4907;
+    margin-inline: 3.3rem;
+    cursor: pointer;
+}
+
+.orderOptions button {
+    all: initial;
+    border: 1px solid #ff5c21;
+    background-color: #ff4907;
+    cursor: pointer;
+    padding: 0.2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-inline: auto;
+    width: 300px;
+} 
+.orderOptions button:first-child {
+    all: initial;
+    border: 1px solid #ff5c21;
+    background-color: #f5f5f5;
+    padding: 0.2rem;
+    cursor: pointer;
+    color: #ff5c21;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-inline: auto;
+    width: 300px;
+} 
+
+.priceDetails {
+    margin-inline: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.priceDetails p{
+    line-height: 2rem;
+    font-weight: 900;
+    font-size: 0.85rem;
+}
+
+.Description h4{
+    font-weight: 900;
+    margin-top: 1rem;
+}
+.Description p{
+    font-size: .85rem;
+}
+.Description{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* SUBFOOTER */
+
+.subFooter {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    width: 100%;
+    margin-top: 3rem;
+    background-image: url('../../assets/images/organic-cosmetic-product-with-dreamy-aesthetic-fresh-background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    width: 100%; 
+    height: 100vh;
+    position: relative;
+    cursor: pointer;
+}
+
+a{
+    all: unset;
+}
+
+.subFooter h5{
+    z-index: 1;
+}
+
+.diffuser {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ec;
+}
+
+.subFooter p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: .8rem;
+    z-index: 1;
+}
+
+.linkContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    z-index: 2;
+}
+.linkContainer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: .85rem;
+    margin-top: .5rem;
+}
+.linkContainer a:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+    text-decoration: none;
+    font-size: .85rem;
+}
+
+.socialHandles {
+    display: flex;
+    gap: 0.7rem;
+    z-index: 1;
+}
+.socialHandles svg:hover {
+    transform: scale(1.95);
+}
+
+/* crud PAGE */
+
+.crud {
+    flex-grow: 1;
+    width: 100%;
+    height: 100dvh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.dashboard {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+}
+
+.dashName {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    text-align: center;
+    gap: 0.5rem;
+}
+.dashName input{
+    all: initial;
+    border: 1px solid #0000004d;
+    display: flex;
+    text-align: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+.dashImage {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    text-align: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+.dashImage input{
+    all: initial;
+    border: 1px solid #0000004d;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    border-radius: 5px 0px 0px 5px;
+}
+.dashSelect {
+    all: initial;
+    border: 1px solid #00000050;
+    padding: .5rem;
+}
+
+
+.dashRadio {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+  }
+  
+  .radioLabel {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ff440094;
+    border-radius: 2px;
+    margin-right: .5rem;
+  }
+  .radioLabel:hover{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ff4400;
+    box-shadow: 0 0 5px #ff4400;
+    transform: scaleX(1.05);
+    transition: smooth;
+  }
+
+  .radioLabel span {
+    padding: 0.1rem 1rem;
+  }
+  
+.radioLabel input[type="radio"]{
+    color: #ff4400;
+    display: none;
+}
+
+  .radioLabel input[type="radio"]:checked + span {
+    font-weight: bold;
+    color: #fff;
+    background-color: #000000d0;
+    padding: 0.1rem 1rem;
+  }
+  
+  .radioLabel span {
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .radioLabel:hover span {
+    color: #ff4500; 
+  }
+
+
+.submit {
+    all: initial;
+    border: 2px solid #00000091;
+    color: #fff;
+    background-color: #000000af;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dashDisplay {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 125px;
+    margin-bottom: 2rem;
+    justify-content: center;
+    font-size: 14px;
+    align-items: center;
+}
+.dashButtons {
+    display: flex;
+    text-align: center;
+    gap: 2px;
+    width: 100%;
+}
+.dashboard a {
+    all: inherit;
+}
+
+.dashButtons button{
+    all: initial;
+    background-color: rgba(255, 0, 0, 0.733);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+h3 {
+    background-color: #000000c5;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 0.2rem;
+    position: sticky;
+    top: 0;
+}
+
+.dashContainer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* ABOUT PAGE */
+
+.Aboutpage {
+    flex-grow: 1;
+    width: 100%;
+    height: 100dvh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.AboutpageAndcondtions {
+    display: flex;padding: .5rem;
+    flex-flow: column nowrap;align-items: center;
+    justify-content: center;text-align: center;
+}
+.AboutpageAndcondtions  p{
+    display: flex;flex-flow:column nowrap;gap: .5rem;font-size: .8rem;
+}
+.aboutHeader {
+    font-size: 1.1rem;text-shadow: 0px 2px 1px #0000003a;
+    font-weight: bolder;
+}
+.bolder {
+    font-weight: bold;
+}
+
+/* REFUND PAGE */
+
+.refundPolicy {
+    flex-grow: 1;
+    width: 100%;
+    height: 100dvh;
+    font-size: .8rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* TERMS AND CONDITIONS */
+
+.headerDesign {
+    display: flex;
+    justify-content: flex-start;
+    color: #000000bd;
+    gap: 2rem;
+    width: 100%;
+    border-bottom: 1px solid #00000088;
+    padding: 0.5rem;
+    margin: 0.1rem;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+.refundPolicy {
+    animation: anim .2s ease-in-out;
+}
+.headerDesign:hover{
+   transform: scale(1.02);
+}
+.headerDesign svg{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.headerDesign svg:hover{
+    transform: scale(1.1);
+}
+.headerDesign span{
+    font-size: 2rem;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+.termsDesign {
+    padding: 1rem;
+}
+.termsDesign p{
+    padding: .5rem;
+    text-align: justify;
+    display: flex;
+    color: #000000f5;
+}
+.termsDesign h1{
+   font-size: 1.25rem;
+   text-align: center;
+}
+.termsDesign h4{
+   font-size: .75rem;
+   margin-top: 1rem;
+   font-weight: 600;
+}
+
+.terms {
+    flex-grow: 1;
+    width: 100%;
+    height: 100dvh;
+    font-size: .8rem;
+    overflow-y: auto;
+    animation: anim .2s ease-in-out;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 0.1rem;
+    align-items: center;
+}
+
+.Aboutpage {
+    animation: anim .2s ease-in-out;
+}

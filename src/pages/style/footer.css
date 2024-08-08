@@ -1,0 +1,185 @@
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #00000059;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.5);
+    padding-top: 0.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.footerLink p{
+    font-size: 0.8rem;
+}
+
+.footerLink {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.icons {
+    font-size: 1.5rem;
+    color: black;
+}
+.icons:hover {
+    font-size: 1.4rem;
+    transform: scale(.95);
+    color: #ff5010;
+}
+.icons:active {
+    font-size: 1.5rem;
+    color: #ff5010;
+}
+
+/* Popup.css */
+.popup {
+    position: fixed;
+    bottom: -100%;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    transition: bottom 0.5s ease-in-out;
+    background-color: #000000d8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup.open {
+    bottom: 50px;
+  }
+  
+  /* .popup-content {
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    box-shadow: 0px 0px 20px #ffffff;
+  } */
+  .popup-content {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    box-shadow: 0px 0px 20px #ffffff;
+  }
+  .popup-content:hover {
+    transform: scale(1.1);
+  }
+
+  .popup-content span {
+    padding: 0 5px;
+    box-shadow: 1px 1px 2.5px #ff48006c;
+  }
+  .popup-content span:hover {
+    padding: 0 5px;background-color: #ff1100ad;
+    box-shadow: 1px 1px 50px #ff110098;
+  }
+
+  .call p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+  .call {
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .2rem;
+    align-items: center;
+  }
+  .whatsapp {
+    color: #008000;margin-left: .5rem;
+  }
+  .socialMedia p{
+    font-size: 0.9rem;
+  }
+  .socialMedia {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .insta {
+    color: #af0083;
+    font-size: 1.3rem;
+    border: 1px solid #00000011;
+    border-radius: 50%;
+    padding: 0.3rem;
+    box-shadow: inset -1px -2px 3px #000;
+  }
+  .insta:hover {
+    transform: scale(1.2);
+  }
+  .faceBook:hover {
+    transform: scale(1.2);
+  }
+  .tikTok:hover {
+    transform: scale(1.2);
+  }
+  .faceBook {
+    color: #2929ff;
+    font-size: 1.3rem;
+    border: 1px solid #00000011;
+    border-radius: 50%;
+    padding: 0.3rem;
+    box-shadow: inset -1px -2px 2px #000;
+  }
+  .tikTok {
+    color: #ffffff;
+    font-size: 1.3rem;
+    border: 1px solid #00000011;
+    border-radius: 50%;
+    padding: 0.3rem;
+    box-shadow: inset -1px -2px 3px #000;
+  }
+  
+  .close-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .footer-btn {
+   color: black;
+   font-size: 1.5rem;
+  }
+  .footer-btn:hover {
+   color: #ff5010;
+   font-size: 1.4rem;
+   transform: scale(.95);
+  }
+  
+
+  /* Typewriter.css */
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black;
+  animation: blink-caret 0.75s step-end infinite;
+  font-family: monospace;
+  font-size: 24px;
+}
+
+.typewriter {
+  background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0%;
+    display: flex;
+    flex-flow: row nowrap; 
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
